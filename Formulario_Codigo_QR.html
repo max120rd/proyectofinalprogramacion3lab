@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Codigo QR</title>
+	<style type="text/css">
+		
+	</style>
+    <link href="CSS/Estilo_Codigo_QR.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+	</head>
+
+	<body>
+    	<div class="Div_Cuerpo">
+			<div class="Div_cabesera">
+        		<div class="Div_Imag_cabesera">
+            		<img class="img_cabesera" src="Imagenes/Caja_ Login_img.jpg" />
+	            </div>
+    	        <div class="Div_lista_menu">
+        	    	<p><a href="#" class="Inicio" >Inicio</a>
+            		<a href="#" class="Registrarse" id="ativo">Registrarse</a>
+            		<a href="#" class="datos">Mostrar datos</a>
+            	  	<a href="#" class="Otros">Otros</a>          	  
+                	</p>
+	            </div>
+			</div>
+       		<div class="Div_cuerpo_paguna">
+        		<form method='post' id="generador">
+            		<div class='row'>
+		  				<div class='col-md-4'>
+		 					<div class="form-group">
+                            	<br /> 
+                        		<label for="textqr"><br />Nombre Completo</label><br /> 
+								<input type="text" class="form-control" id="Nombre_Completo"  placeholder="Nombre Completo" required>
+                            	<br /><br /> 
+                            	<label for="textqr">Empresa</label><br /> 
+								<input type="text" class="form-control" id="Empresa"  placeholder="Empresa" required>
+                            	<br /><br /> 
+                                <label for="textqr">Cargo</label><br /> 
+								<input type="text" class="form-control" id="Cargo"  placeholder="Cargo" required>
+                                <br /><br /> 
+                            	<label for="textqr">Telefono Movil</label><br /> 
+								<input type="text" class="form-control" id="Telefono_Movil"  placeholder="Telefono Movil" required>
+                            	<br /><br /> 
+                            	<label for="textqr">Telefono Hogar</label><br /> 
+								<input type="text" class="form-control" id="Telefono_Hogar"  placeholder="Telefono Hogar" required>
+    	                        <br /><br /> 
+								<label for="textqr">Correo Electronico Instucional</label><br /> 
+								<input type="text" class="form-control" id="Correo_Electronico_Instucional"  placeholder="Correo Electronico Instucional" required>
+                                <br /><br /> 
+                                <label for="textqr">Correo Empresa</label><br /> 
+								<input type="text" class="form-control" id="Correo_Empresa"  placeholder="Correo Empresa" required>
+                                <br />   
+		 						<button type="button" class="btn btn-primary" onclick="get_Data()" >Generar</button>
+                                
+							</div>
+                    		<div class='qrcode' id="qrcode" style="width:100px; height:100px; margin-top:15px;">
+                             		
+							</div>
+                    	</div>
+                	</div>
+        		</form>
+        	</div>
+		</div>
+      	<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    	<script type="text/javascript" src="JavaScript/QR_Genera_Codigo_JS.js"></script>
+        <script>
+			$( "#generador" ).submit(function( event ) {
+				var textqr=$("#textqr").val();
+				var sizeqr=$("#sizeqr").val();
+				parametros={"textqr":textqr,"sizeqr":sizeqr};
+			 	$.ajax({
+					 type: "POST",
+					url: "qr.php",
+					data: parametros,
+					success: function(datos){
+						$(".result").html(datos);
+						}
+			 	})
+				event.preventDefault();
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,90 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	background:url(../Imagenes/Body_Index_Img.jpg);
+}
+.Div_cabesera{
+	padding:0;
+	background-color: #0FF;
+	/*overflow:hidden;*/
+}
+
+.Div_lista_menu{
+	padding:0%;
+	margin:0%;
+	overflow:hidden;
+	background-color: #69F;
+	position:inherit;
+	text-align: center;
+}
+
+.Div_lista_menu p a{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 17px;
+	text-decoration:none;
+	float: inherit;
+	padding: 19px;
+	background-color: #69F;
+	color:#0F9;
+}
+
+.form-control{
+	padding: 5px;
+	border:1px dotted #999;
+	boder-radius: 20px;
+	-webkit-appearance: none;
+}
+
+.Div_Cuerpo{
+	width:60%;
+	max-width: 650px;
+	margin: 20px auto;
+	margin-top: 0px;
+	background: #FFF;
+	padding: 0px;
+	box-shadow:0px 2px 5px rgba(0,0,0,0.75);
+	height: 800px;;
+}
+
+.img_cabesera{
+	width:100%;
+	height:80px;
+}
+
+/*
+.Div_cabesera{
+	width:90%;
+	max-width: 1000px;
+	margin: 0px auto;
+	box-shadow:0px 2px 5px rgba(0,0,0,0.75);
+}*/
+
+.Div_lista_menu p a:hover, #ativo:hover{
+	background-color: #0C6;
+}
+
+.Div_cuerpo_paguna{
+	padding:20px;
+}
+input, button{
+	width: 70%;
+	margin-bottom: 10px;
+	padding: 7px;
+	font-size: 17px;
+	border:none;
+	margin-top:0%;
+	border-radius: 15px;
+	outline:none;
+}
+button{
+	background: #fb2525;
+	color:#fff;
+	font-size:25px;
+	border-radius: 20px;
+}
+
+button:hover{
+	cursor:pointer;
+	background:#ffc107;
+	color:#000;
+}

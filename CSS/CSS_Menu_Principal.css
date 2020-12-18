@@ -1,0 +1,47 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	background: url(../Imagenes/Body_Index_Img.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.Caja_Cuerpo{
+	margin-top:2%;
+	margin-left:32%;
+	left: 50%;
+	text-align:center;
+}
+
+img{
+	width:180px;
+	height:180px;
+}
+
+.Lista_Etiquetaca_HTML:hover{
+	box-shadow:0px 2px 5px rgba(0,0,0,0.75);
+}
+
+.Presentacion_Horario:hover{
+	box-shadow:0px 2px 5px rgba(0,0,0,0.75);
+}
+
+.Codigo_QR:hover{
+	box-shadow:0px 2px 5px rgba(0,0,0,0.75);
+}
+
+.Tap:hover{
+	box-shadow:5px 10px 15px rgba(0,0,0,0.75);
+}
+
+.VaLidar_Cedula:hover{
+	box-shadow:5px 10px 15px rgba(0,0,0,0.75);
+}
+
+.Menu:hover{
+	box-shadow:5px 10px 15px rgba(0,0,0,0.75);
+}
+
+.Documentos:hover{
+	box-shadow:5px 10px 15px rgba(0,0,0,0.75);
+}

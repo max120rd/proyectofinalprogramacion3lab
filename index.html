@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Practica servidor</title>
+<link rel="stylesheet" type="text/css" href="CSS/CSS_Login.css" />
+</head>
+<body>
+	<div class="Caja_Login" id="Caja_Login">
+		<img src="Imagenes/Caja_ Login_Img.jpg" class="Caja_Login_Img" />
+        <div class="Caja_Avatar">
+        	<img src="Imagenes/Caja_Avatar_Img.jpg" class="Caja_Avatar_Img"  />         
+        </div>
+        <div id="Caja_Login_Form" class="Caja_Login">
+        	<h1 style="margin-top:50px;">Iniciar Seccion</h1>
+            <form method="post" action="Menu_Principal.html" onsubmit="return validar()">                       	
+                <input type="text" name="" placeholder="Nombre Usuario" id="TXT_Nombre_Usuario" /><br />         
+                <input type="password" name="" placeholder="password" id="TXT_password" /><br />
+               <button type="submit" id="BTTN_OnClick_Login" style="margin-top:10px;"> Login</button>
+            </form>        
+        </div>
+	</div>
+	<script src="JavaScript/JavaScript_Servidor.js"></script>
+</body>
+</html>

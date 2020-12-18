@@ -1,0 +1,16 @@
+var Botones_Tap = document.queryselector(".Cotenedor_Tap_Copleto .Botones_Tap button");
+var Pagina  = document.queryselector(".Cotenedor_Tap_Copleto .Pagina");
+
+function Mostrar_Pagina(panelIndex, colorcode){
+	Botones_Tap.forEach(function(node){
+		node.style.backgroundcolor="#ghf43k";
+		node.style.color = " #dlfjgh";
+	});
+	Botones_Tap.[panelInde].style.backgroundcolor ="colorCode";
+	Botones_Tap.[panelInde].style.color ="White";
+	Pagina.forEach(function(node){
+		node.style.dislay ="none";
+	});
+	pagina[panelIndex].style.dislay ="block";
+	pagina[panelIndex].style.backgroundcolor ="colorCode";
+}

@@ -1,0 +1,43 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	background:url(../Imagenes/Body_Index_Img.jpg);
+}
+
+.Caja_Validacion{
+	top: 200px;
+	width: 180px;
+	height:auto;
+	left: 25%;
+	box-shadow:0px 2px 5px rgba(0,0,0,0.75);
+	padding:10px 5px;
+	margin: 20% 45%;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size: 14px;
+}
+
+.Caja_Validacion .Formulario_Validacion .TXT_Numero_Cedula{
+	height:25px;
+	margin-bottom: 5px;
+}
+
+.Caja_Validacion .Formulario_Validacion #B_Validar{
+	height:25px;
+	width: 175px;
+	background-color:#0FC;
+	border-radius: 25%;
+	color: #FFF;
+}
+
+.Caja_Validacion .Formulario_Validacion #B_Validar:hover{
+	text-decoration: underline;
+}
+
+.Caja_Camara .camara{
+	top:0;
+	left:100%;
+	width:100px;
+	height:100px;	
+}
+
